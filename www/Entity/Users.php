@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 namespace Entity;
 
-use Model\UserInterface;
-use Model\UsersRepository;
+use Repository\UsersRepository;
 
 class Users implements UserInterface
 {
