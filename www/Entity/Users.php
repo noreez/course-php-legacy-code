@@ -14,11 +14,11 @@ class Users implements UserInterface
 	public $role = 1;
 	public $status = 0;
 	private $userRepository;
-	public $identity;
-	public function __construct(UsersRepository $usersRepository, Identity $identity)
+	public $name;
+	public function __construct(UsersRepository $usersRepository, Name $name)
 	{
 		$this->userRepository=$usersRepository;
-		$this->identity=$identity;
+		$this->name=$name;
 	}
 	public function setId(int $id)
 	{
